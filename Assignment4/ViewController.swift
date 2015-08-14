@@ -20,6 +20,29 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        println("1. viewWillApper")
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        println("4. viewDidAppear")
+    }
+    
+    override func viewWillLayoutSubviews() {
+        println("2. viewWillLayoutSubviews")
+    }
 
+    override func viewDidLayoutSubviews() {
+        println("3. viewDidLayoutSubviews")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        println("this is when viewWillDisappear kicks in")
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        println("this is when viewDidDisappear kicks in")
+    }
+    
 }
 
